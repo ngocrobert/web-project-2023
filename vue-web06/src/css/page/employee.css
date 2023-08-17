@@ -1,0 +1,419 @@
+.m-page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.m-page-header .m-page-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.m-page-header .m-page-button {
+    position: absolute;
+    right: 0;
+}
+
+/* CSS Toolbar */
+
+.m-page-toolbar {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: flex-end;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.m-page-toolbar .m-toolbar-reload {
+    margin: 0 16px;
+}
+
+
+/* CSS table */
+
+.m-page-table {
+    width: 100%;
+    height: calc(100% - 96px);
+    background-color: #fff
+}
+
+.row-selected td.multiple-cell{
+    background-color: #f9ecca;
+    /* background-color: rgba(80,184,60,0.1); */
+}
+
+
+tr:hover td.multiple-cell {
+    background-color: #fff8cb;
+    cursor: pointer;
+}
+
+.m-outer-wrapper {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.row-table {
+    height: fit-content;
+    max-height: 66vh;
+    overflow: scroll;
+}
+
+.row-table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;   
+}
+
+.row-table::-webkit-scrollbar
+
+.row-table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.row-table::-webkit-scrollbar-thumb {
+    background: #9E9E9E;
+    border-radius: 4px;
+    height: 100px;
+}
+
+/* Ẩn thanh cuộn khi không hoạt động (optional) */
+.row-table::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-indent: initial;
+}
+
+
+
+/* table th,
+table td {
+    white-space: nowrap;
+    padding: 10px 20px;
+} */
+.row-table table tr th:first-child,
+.row-table table td:first-child {
+    position: sticky;
+    width: 100px;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    /* border-right: 1px solid #ddd; */
+    /* outline-style: 1px red; */
+    /* outline: 1px solid #ddd; */
+
+}
+
+.row-table table tr th:last-child,
+.row-table table td:last-child {
+    position: sticky;
+    width: 100px;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    /* border-right: 1px solid #ddd; */
+    /* outline-style: 1px red; */
+    outline: 1px solid #ddd;
+}
+
+.row-table table tr th:first-child,
+.row-table table tr th:last-child {
+    z-index: 12;
+    /* border-bottom: 1px solid #ddd; */
+    background-color: var(--table-header-background-color);
+    outline: 1px solid #ddd;
+}
+
+table tr td {
+    z-index: 12;
+    /* border-right: 1px solid #ddd; */
+    /* outline: 1px solid #ddd; */
+}
+
+
+table tr th{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: var(--table-header-background-color);
+    outline: 0.5px solid #ddd;
+}
+
+.row-table table tbody tr:hover,
+.row-table table tbody  tr:hover td:first-child,
+.row-table table tbody tr:hover td:last-child  {
+    /* background-color: rgba(255, 0, 0,0.1); */
+    background-color: #fff8cb !important;
+    cursor: pointer;
+}
+
+.row-table .m-table tbody tr.row-selected,
+.row-table .m-table tbody tr.row-selected td:first-child,
+.row-table .m-table tbody tr.row-selected td:last-child  {
+    background-color: #f9ecca !important;
+}
+
+
+.m-table tr td input[type="checkbox"],
+.m-table tr th input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.m-table tbody tr.list-function {
+    position: relative;
+    z-index: 12;
+}
+
+
+/* CSS function Edit */
+.m-td.z-edit {
+    z-index: 11;
+}
+
+.m-td .m-dropdown .m-dropdown-select {
+    background-color: transparent;
+}
+
+.m-dropdown .m-dropdown-select .select-txt,
+.m-dropdown .m-dropdown-select i {
+    color: #0075c0;
+}
+
+.m-dropdown .m-dropdown-select i {
+    padding: 0 14px;
+}
+
+.m-dropdown .m-dropdown-list {
+    width: 124px;
+    top: 100%;
+    left: -28px;
+}
+
+/* CSS paging table */
+
+.m-page-table {
+    position: relative;
+    border-radius: 4px;
+}
+
+.m-page-table .m-paging {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.m-page-table .m-dialog {
+    z-index: 13;
+}
+
+/* CSS trang THÊM NHÂN VIÊN */
+
+.m-dialog-content {
+    width: 900px;
+    min-width: 900px;
+}
+
+.m-dialog-header .m-dialog-title{
+    display: flex;
+    align-items: center;
+}
+
+/* .m-dialog-header .m-dialog-title label {
+    display: flex;
+    padding: 0 20px;
+} */
+
+.m-dialog-header .m-dialog-title .m-checkbox {
+    padding: 0 20px;
+}
+
+.m-dialog-header .m-dialog-title label span {
+    padding-left: 8px;
+   
+}
+
+.m-dialog-header .m-dialog-close .mi-help{
+    margin-right: 6px;
+}
+
+.m-dialog-title {
+    padding-right: 24px;
+}
+
+.flex-employee {
+    display: flex;
+}
+
+.pd-b-12 {
+    padding-bottom: 12px;
+}
+
+.p-r-26 {
+    padding-right: 24px;
+}
+
+.w-1\/2 {
+    width: 50% !important;
+}
+
+.pd-b-8 {
+    padding-bottom: 8px;
+}
+
+.pd-r-6 {
+    padding-right: 6px;
+}
+
+.mg-r-6 {
+    margin-right: 6px;
+}
+
+.w-2\/5 {
+    width: 40%!important;
+}
+
+.w-3\/5 {
+    width: 60%!important;
+}
+
+.label-with-star {
+    font-weight: 600;
+}
+
+.m-dialog-body .m-input {
+    width: 100%;
+    font-family: 'MISA-font';
+}
+
+.flex-employee .m-row.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.m-tab {
+    height: 194px;
+    margin: 12px 10px 0;
+}
+
+.w-full {
+   
+    width: 100% !important;
+}
+
+.w-1\/4 {
+    width: 25%!important;
+}
+
+.mg-t-8 {
+    margin-top: 8px;
+}
+
+.m-dialog .m-dialog-footer {
+    padding: 0 24px;
+}
+
+.m-dialog-radio {
+    padding-top: 12px;
+    display: flex;
+    height: 36px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.m-dialog-radio input[type="radio"] {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.m-dialog-radio span {
+    margin-right: 16px;
+}
+
+.m-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.divide {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin: 12px 0 10px;
+    position: relative;
+}
+
+.btn-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.m-popup {
+    z-index: 13;
+}
+
+.m-popup .m-popup-footer.m-popup-warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+}
+
+.m-dialog-footer__btn {
+    flex-direction: row-reverse;
+}
+
+/* CSS tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 145%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /* CSS Toast */
+
+.container .m-toast-box {
+    z-index: 12;
+}

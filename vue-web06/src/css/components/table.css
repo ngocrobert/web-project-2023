@@ -1,0 +1,48 @@
+input[type="checkbox"] {
+    width: auto;
+}
+
+.m-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: unset;
+    border: unset;
+}
+
+.m-table tr {
+    height: 48px;
+}
+
+.m-table tr td,
+.m-table tr th {
+    padding: 0 16px;
+}
+
+.m-th,
+.m-td {
+    border-bottom: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
+}
+
+.m-table .text-align-left {
+    text-align: left;
+}
+
+.m-table .text-align-right {
+    text-align: right;
+}
+
+.m-table .text-align-center {
+    text-align: center;
+}
+
+.m-table tbody tr:hover {
+    /* background-color: rgba(255, 0, 0,0.1); */
+    /* background-color: #fff8cb !important; */
+    cursor: pointer;
+}
+
+.m-table tbody tr.row-selected {
+    background-color: #f9ecca;
+    /* background-color: rgba(80,184,60,0.1); */
+}

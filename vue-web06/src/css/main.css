@@ -1,0 +1,51 @@
+@import url(./components/button.css);
+@import url(./components/input.css);
+@import url(./components/icon.css);
+@import url(./components/toast.css);
+@import url(./components/dialog.css);
+@import url(./components/table.css);
+@import url(./components/paging.css);
+@import url(./components/combobox.css);
+@import url(./components/selectbox.css);
+@import url(./components/popup.css);
+@import url(./components/checkbox.css);
+
+/* Combobox with table data */
+@import url(./components/boxtable.css);
+
+@import url(./layout/layout.css);
+@import url(./page/employee.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MISA-font;
+    font-size: 13px;
+    /* background-color: rgb(248, 238, 226); */
+}
+
+@font-face {
+    font-family: MISA-font;
+    src: url("../assets/font/GoogleSans-Regular.otf");
+}
+
+:root {
+    --slide-bar-background-color: #020a01;
+    --slide-bar--active-border-color: #2ca01c;
+    --table-header-background-color: #bcd4b9;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .m-row {
+    width: 100%;
+} */

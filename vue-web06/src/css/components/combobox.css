@@ -1,0 +1,104 @@
+
+
+.m-row.wrapper {
+    width: 200px;
+    margin: 130px auto 0;
+}
+
+.select-btn, .options li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.m-row .select-btn {
+    height: 36px;
+    margin-top: 8px;
+    /* font-size: 14px; */
+    padding: 0 12px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #babec5;
+    justify-content: space-between;
+}
+
+.m-row .select-btn input,
+.m-row .select-btn input:focus-visible {
+    width: 85%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.m-row .select-btn i {
+    font-size: 16px;
+    padding-left: 12px;
+    /* border-left: 1px solid #E6E6E6; */
+}
+
+
+.m-row .select-btn:focus,
+.m-row .select-btn:hover {
+    border: 1px solid #50B83C;
+}
+
+.m-row .select-btn.focus,
+.m-row .select-btn:focus,
+.m-row .select-btn:focus-within {
+    border: 1px solid #50B83C;
+}
+
+
+.m-row .select-content{
+    display: none;
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.wrapper.active .select-content {
+    display: block;
+}
+
+.select-content .options {
+    max-height: 308px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.options::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+.options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background: #9E9E9E;
+    border-radius: 4px;
+    height: 100px;
+}
+
+.options li {
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+.options li:hover {
+    background: rgba(80,184,60,0.1);
+}
+
+.options li.selected {
+    background: rgba(80,184,60,0.1);
+    background-image: url(../../assets/icon/ic_check.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 140px center;
+}
+

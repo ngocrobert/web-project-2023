@@ -1,0 +1,90 @@
+.m-paging {
+    position: relative;;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.m-paging .m-paging-center {
+    display: flex;
+}
+
+.m-paging .m-page-number-group {
+    display: flex;
+}
+
+/* .m-paging button {
+    width: 24px;
+    height: 24px;
+} */
+
+.m-paging .m-paging-left {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    align-items: center;
+    height: 20px;
+}
+
+.m-paging .m-paging-left .total {
+    margin: 0 6px;
+    font-weight: 700;
+}
+
+.m-paging .m-paging-right {
+    display: flex;
+    position: absolute;
+    height: 40px;
+    right: 16px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.m-paging-size select{
+    width: 76px;
+    height: 36px;
+    margin: 4px 16px;
+    line-height: 32px;
+    border-radius: 4px;
+}
+
+.m-paging-right .m-from-to {
+    height: 16px;
+}
+
+.m-paging-right .m-from-to span {
+    font-weight: 700;
+}
+
+.m-paging-right .m-paging-button {
+    display: flex;
+    box-sizing: border-box;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.m-btn-page {
+    position: relative;
+    height: 36px;
+    width: 36px;
+    /* transform: rotate(-180deg); */
+    
+}
+
+.m-btn-page.prev {
+    margin-left: 25px;
+    margin-top: 4px;
+    transform: rotate(-180deg);
+}
+
+.m-btn-page::before {
+    content: "";
+    position: absolute;
+    background: transparent url("../../assets/icon/sprites.06b14dc5.svg") no-repeat -240px 0;
+    height: 24px;
+    width: 24px;
+    top: 8px;
+    left: 6px;
+}

@@ -1,0 +1,112 @@
+.m-icon-search {
+    background-image: url(../../assets/icon/ic_search2.png);
+    /* background-position: -425px -33px; */
+}
+
+.m-icon-check {
+    background-image: url(../../assets/icon/ic_check.png);
+}
+
+.m-icon-20 {
+     background-size: 20px 20px;
+}
+
+.mi {
+    background: url(../../assets/icon/Sprites-web06.svg) no-repeat;
+    cursor: pointer;
+}
+
+.mi-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.mi-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.mi-20 {
+    width: 20px;
+    height: 20px;
+}
+
+.mi-arrow-down {
+    background-position: -80px -360px;
+    transform: rotate(90deg);
+}
+
+.mi-three-stripes {
+    background-position: -843px -30px;
+}
+
+.mi-bell__nav {
+    background-position: -788px -30px;
+}
+
+/* icon Sidebar */
+
+.mi-sidebar-dashboard { 
+    background-position: -30px -1628px;
+}
+
+.mi-sidebar-cash {
+    background-position: -73px -1628px;
+}
+
+.mi-sidebar-bank {
+    background-position: -117px -1628px;
+}
+
+.mi-sidebar-pu {
+    background-position: -161px -1628px;
+}
+
+.mi-sidebar-sale {
+    background-position: -204px -1628px;
+}
+
+.mi-sidebar-invoice {
+    background-position: -249px -1628px;
+}
+
+.mi-sidebar-stock {
+    background-position: -291px -1628px;
+}
+
+.mi-sidebar-action {
+    background: url(https://cegovapp.misacdn.net/cegov/img/ic_toggle.4abb3c52.svg) no-repeat;   
+}
+
+/* Icon content */
+
+.mi-reload {
+    background-position: -423px -201px;
+}
+
+.mi-reload:hover {
+    background-position: -1097px -88px;
+}
+
+/* Icon Add form */
+.mi-help {
+    background-position: -89px -144px;;
+}
+
+.mi-close {
+    background-position: -144px -144px;
+}
+
+/* Icon popup */
+.mi-error {
+    background-position: -538px -146px;
+}
+
+.mi-warning {
+    background-position: -817px -145px;
+}
+
+/* Icon combobox table */
+.mi-green--pen {
+    background-position: -2392px -404px;
+}

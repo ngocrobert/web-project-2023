@@ -1,0 +1,187 @@
+/* CSS header */
+.header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    float: left;
+}
+
+.header__left {
+    display: flex;
+    width: 200px;
+    background-color: var(--slide-bar-background-color);
+    height: 100%;
+    align-items: center;
+    column-gap: 16px;
+    padding: 0 16px;
+    /* box-sizing: border-box; */
+
+}
+
+.toggle {
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/icon/Sprites-web06.svg) no-repeat -424px -86px;
+    /* background-size: contain; */
+}
+
+.logo {
+    height: 36px;
+    flex: 1;
+    background-image: url(../../assets/img/Logo_Module_TiengViet_White.66947422.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+/* Header Right: account, thong bao... */
+
+.header__right {
+    flex: 1;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right .right-branch .mi-three-stripes {
+    margin-left: 20px;
+}
+
+.header__right .right-branch .header-branch {
+    padding: 0 16px;
+}
+
+.header__right .right-branch .header-branch {
+    display: flex;
+    cursor: pointer;
+}
+
+.header-branch .branch-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-branch .branch-icon {
+    margin-left: 4px;
+}
+
+.right-account .notify:hover {
+    /* margin-right: 16px; */
+    background-color: #FFE4E4;
+}
+
+.right-account .account-info {
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.header__right .right-account .account-info {
+    display: flex;
+    align-items: center;
+}
+
+.header__right .account-info .user-ava {
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/img/default-avatar.jpg);
+    background-size: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.header__right .account-info .user-name {
+    margin-right: 8px;
+}
+
+.header__right .account-info .user-name .display-name { 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CSS Sidebar */
+
+.sidebar {
+    width: 200px;
+    height: calc(100vh - 56px);
+    background-color: aquamarine;
+    float: left;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    flex: 1;
+    padding: 20px 12px;
+    background-color: var(--slide-bar-background-color);
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav-item {
+    color: #fff;
+    padding: 0 12px;
+    column-gap: 12px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.nav-item--active, .router-link-active{
+    position: relative;
+    /* border-left: 5px solid var(--slide-bar--active-border-color); */
+}
+
+.nav-item--active::before, .router-link-active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: #d4d7dc;
+    opacity: .2;
+    border-radius: 4px;
+}
+
+.nav-item:hover {
+    background: hsla(0,0%,100%,.2);
+}
+
+.nav-item+.nav-item {
+    margin-top: 4px;
+}
+
+.nav__icon {
+    width: 24px;
+    height: 24px;
+    /* background-color: #ff6a00; */
+}
+
+
+.nav-action {
+    height: 44px;
+    width: 100%;
+    border-top: .5px solid #fff;
+    background-color: var(--slide-bar-background-color);
+}
+
+/* CSS Container */
+
+.container {
+    width: calc(100% - 200px);
+    height: calc(100vh - 56px);
+    background-color: #e4e9e7;
+    float: left;
+    padding: 10px 24px 16px 24px;
+}
+
